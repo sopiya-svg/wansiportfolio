@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>Lab Exercise #3 HTML Forms</title>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend><b>Request for Proposal</b></legend>
+
+        <table>
+            <tr>
+                <td>Your Company:</td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td><input type="email"></td>
+            </tr>
+
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" value = "Sopiya"></td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" value="09098060" ></td>
+            </tr>
+
+            <tr>
+                <td>Your business:</td>
+                <td>
+                    <textarea rows="5" cols="30">
+Briefly describe your business in this place:
+                    </textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Company size:</td>
+                <td>
+                    <input type="radio" name="size"> Less than 10 <br>
+                    <input type="radio" name="size"> 11 to 50 <br>
+                    <input type="radio" name="size"> 50 to 200 <br>
+                    <input type="radio" name="size"> Over 200
+                </td>
+            </tr>
+
+            <tr>
+        <td>Services:</td>
+        <td><input type="checkbox"><label>Brand Identity</label>
+        <input type="checkbox"><label>New Website</label>
+        <input type="checkbox"><label>Web Redesign</label></td>
+    </tr>
+
+    <tr>
+        <td>Timeline:</td>
+        <td><select id="timeline" name="timeline">
+            <option value=" "></option>
+            <option value ="Immediately">Immediately</option>
+            <option value ="1-2 weeks">1-2 weeks</option>
+            <option value ="3-6 weeks">3-6 weeks</option>
+            <option value ="2 months">2 months</option>
+            </select>
+    <br>
+        <input type="submit" value="Send to devdesign">       
+    </td>
+    </tr>
+    </table>
+    </fieldset>
+</form>
+    
+</body>
+</html>
