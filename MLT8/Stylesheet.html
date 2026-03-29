@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Same Page Different Stylesheets</title>
+    <link id="page-style" rel="stylesheet" href="style1.css">
+    
+    <script>
+       
+        function setStyle(sheetName) {
+            document.getElementById('page-style').setAttribute('href', sheetName);
+        }
+    </script>
+</head>
+<body>
+    <style>
+        
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+header {
+    background-color: #0d965e; /* Green matching image */
+    color: white;
+    padding: 20px 0;
+    border-bottom: 2px solid #ccc;
+}
+
+header h1 {
+    font-size: 2.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.1em;
+    margin: 0;
+    opacity: 0.9;
+}
+
+
+.main-layout {
+    display: flex; 
+    margin-top: 20px;
+    gap: 20px; 
+    align-items: flex-start;
+}
+
+
+.left-menu {
+    flex: 0 0 150px; 
+}
+
+.left-menu ul {
+    list-style-type: none; 
+    margin: 0;
+}
+
+.left-menu li {
+    background-color: #f0f0f0; 
+    border: 1px solid #d0d0d0;
+    margin-bottom: 5px; 
+    border-radius: 4px; 
+}
+
+.left-menu li:first-child {
+    background-color: #0d965e; 
+    border-color: #0d965e;
+}
+
+
+.left-menu li a {
+    display: block; 
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+
+.left-menu li:first-child a {
+    color: white;
+}
+
+
+main {
+    flex: 1; 
+    background-color: white;
+}
+
+main h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+main p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+.right-sidebar {
+    flex: 0 0 200px; 
+    background-color: #3ca1e3; 
+    color: white;
+    padding: 20px;
+    border-radius: 8px; 
+}
+
+.right-sidebar h3 {
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.right-sidebar p {
+    color: white;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+    </style>
+
+    <header>
+        <div class="container">
+            <h1>Welcome to My Homepage</h1>
+            <p>Use the menu to select different Stylesheets</p>
+        </div>
+    </header>
+
+    <div class="container main-layout">
+        
+        <nav class="left-menu">
+            <ul>
+                <li><a href="#" onclick="setStyle('style1.css')">Stylesheet 1</a></li>
+                <li><a href="#" onclick="setStyle('style2.css')">Stylesheet 2</a></li>
+                <li><a href="#" onclick="setStyle('style3.css')">Stylesheet 3</a></li>
+                <li><a href="#" onclick="setStyle('style4.css')">Stylesheet 4</a></li>
+                <li><a href="#" onclick="setStyle('nostyle.css')">No Stylesheet</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Same Page Different Stylesheets</h2>
+            <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links: 
+                <a href="#" onclick="setStyle('style1.css')">Stylesheet1</a>, 
+                <a href="#" onclick="setStyle('style2.css')">Stylesheet2</a>, 
+                <a href="#" onclick="setStyle('style3.css')">Stylesheet3</a>, 
+                <a href="#" onclick="setStyle('style4.css')">Stylesheet4</a>.
+            </p>
+
+            <h2>No Styles</h2>
+            <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet: 
+                <a href="#" onclick="setStyle('nostyle.css')">No Stylesheet</a>.
+            </p>
+        </main>
+
+        <aside class="right-sidebar">
+            <h3>Side-Bar</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </aside>
+
+    </div>
+
+</body>
+</html>
+
