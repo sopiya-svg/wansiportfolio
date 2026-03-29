@@ -1,114 +1,221 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #ffe4ec, #fff0f5);
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 30px;
+}
+
+.header img {
+    border-radius: 50%;
+    border: 4px solid #ff69b4;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.header h2 {
+    color: #d63384;
+}
+
+/* BANNER */
+.banner {
+    background: linear-gradient(to right, #ffb6c1, #ff69b4);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+/* GRID */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* BOX STYLE */
+.box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #ffb6c1;
+    box-shadow: 0 4px 10px rgba(255,105,180,0.2);
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    border-color: #ff69b4;
+}
+
+/* FULL WIDTH */
+.full {
+    grid-column: span 2;
+}
+
+/* TEXT */
+h3 {
+    color: #ff69b4;
+}
+
+a {
+    text-decoration: none;
+    color: #d63384;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
 </head>
+
 <body>
-    <img src="images/profile.jpg" width = "150px" height = "140px"
-    style="border: 1px solid black; border-radius:20px;">
-    <p> <b>Sophia S. Hipolito </b> <br>San Isidro Cpn Tarlac <br>
-        <a href="http.//email.com">hipolitosophia127@gmail.com</a><br>
-        <a href="tel:69102986842"> +69102986842</a>
 
- <hr class="thick">
+<div class="header">
+    <img src="images/picsur.jpg" width="150">
+    <h2>Sophia S. Hipolito</h2>
+    <p>San Isidro, Cpn, Tarlac</p>
+    <p>
+        <a href="mailto:hipolitosophia127@gmail.com">📩 Email</a> |
+        <a href="tel:09123456789">📞 Phone</a>
+    </p>
+</div>
 
+<div class="banner">
 <p>Hello, welcome to my <strong>Web System & technologies</strong> (WS101) <strong>Portfolio</strong>. This portfolio  <br> showcase my projects and activities, reflecting the skills and knowledge I gained throughout the course. </p>
+</div>
 
+<div class="container">
 
-<hr class="thick">
-
-<h2>&#127799; <strong>About Me</strong> </h2>
-<p>I am a friendly, religious, and kind person who is guided by my faith. My faith plays an <br> important role in shaping my values, decisions, and the way I interact with others.</br> I always try to be respectful, understanding, and compassionate in my everyday life. </p>
-
-<hr class="thick">
-
-<h3> <strong>What I Believe In:</strong> </h3>
-<ul>
-    <li> Treating others with understanding matters &#129309; </li>
-    <li> Effort and consistency shape success over time &#9203; </li>
-    <li> I value the small moments and simple blessings in everyday life &#127811;</li>
-    <li> Growth comes from trying, failing, and learning again &#127793; </li>
-    <li> Being open to helping others and embracing new experiences helps me grow &#127757; </li>
+    <div class="box">
+    <h3>👂 About Me</h3>
+    <p>Hello! Im Sophia, a friendly, kind, and faith-guided person. 💗</p>
+    <ul class="about-me-list">
+        <li>Positive thinker 🌸</li>
+        <li>Always eager to learn 📚</li>
+        <li>Enjoys helping others 🤝</li>
+        <li>Loves creativity 🎨</li>
+        <li>Curious about tech 💻</li>
     </ul>
-    <p> I am <b> open to learning, helping others, </b> and <b> improving myself </b> through <b>new experiences.</b> </p>
-
-    <hr class="thick">
-
-    <h3>&#127891; EDUCATION </h3> 
-    <p><b>Senior High School:</b> Anastacio G. Yumul High School(HUMSS) </p>
-    <p><b>Junior High School:</b> Anastacio G. Yumul High School</p>
-    <p><b>Elementary:</b> Almendras Elementary School</p>
-
-    <hr class="thick">
-
-    <h3>&#128187; <strong>Language I used</strong></h3>
-    <img src="images/ht.jpg" width="120px" height="120px">  <img src="images/jv.jpg" width="120px" height="120px"> <img src="images/python.jpg" width="120px" height="120px">
-
-    <hr class="thick">
-
-<h3>&#128187; &#128221; <strong>My Projects</strong></h3>
-<h4>&#129504; MIDTERM </h4>
-    <b>MIDTERM LAB 1:</b> &#128193; <a href="MIDTERMS/MLT1/resume.html" target="_blank" style="text-decoration:none;"> Resume writing using HTML </a>
-    <br><b>MIDTERM LAB 2:</b> &#128193; <a href="MIDTERMS/MLT2/list.html" target="_blank" style="text-decoration:none;">HTML Lists and tables> </a>
-    <br><b>MIDTERM LAB 3:</b> &#128193; <a href="MIDTERMS/MLT3/index.html" target="_blank" style="text-decoration:none;"Ongoing...> </a>
-    <br><b>MIDTERM LAB 4:</b> &#128193; <a href="MIDTERMS/MLT4/index.html" target="_blank" style="text-decoration:none;"Ongoing...></a>
-
-<hr class="thick"
-
-<h4>&#127891; FINALS</h4>
-    <b>FINAL LAB TASK 1:</b> &#128193; <a href="FINAL LAB TASK 1/FLT1/index.html" target="_blank" style="text-decoration:none;"> Ongoing...</a>
-    <br><b>FINAL LAB TASK 2:</b> &#128193; <a href="FINAL LAB TASK 2/FLT2/index.html" target="_blank" style="text-decoration:none;"> Ongoing...</a>
-    <br><b>FINAL LAB TASK 3:</b> &#128193; <a href="FINAL LAB TASK 3/FLT3/index.html" target="_blank" style="text-decoration:none;"> Ongoing...</a>
-    <br><b>FINAL LAB TASK 4:</b> &#128193; <a href="FINAL LAB TASK 4/FLT4/index.html" target="_blank" style="text-decoration:none;"> Ongoing...</a>
-    <br><b>FINAL LAB TASK 5:</b> &#128193; <a href="FINAL LAB TASK 5/FLT5/index.html" target="_blank" style="text-decoration:none;"> Ongoing...</a>
-    <br><b>FINAL LAB TASL 6:</b> &#128193; <a href="FINAL LAB TASK 6/FLT6/index.html" target="_blank" style="text-decoration:none;"> Ongoing...</a>
-
-<hr class="thick">
-
-<h3>&#127800;  I Love: </h3>
-<ul>
-    <li>&#127802;Simple things that bring peace and comfort.</li>
-    <li>&#128214;Reading Wattpad stories, especially romance and drama.</li>
-    <li>&#127961;Watching K-dramas with emotional scenes and plot twists.</li>
-    <li>&#127811;Alone time to recharge.</li>
-    <li>&#9729;Daydreaming and overthinking random thigs. </li>
-    <li>&#127919;Setting goals and slowly working toward them.</li>
-</ul>
-
-<hr class="thick">
-
-<h3>&#128161; Fun facts about Me</h3>
-<ul>
-    <li>I can eat &#129316 <b>avocado</b> even without <b>sugar</b> or <b>powdered milk</b>, and genuinely enjoy its natural taste.</li>
-    <li>I have <b>never tried</b>&#129375;<b>siopao</b>,even though it is one of the most common street foods in the Philippines.</li>
-    <li>I have been &#9962;<b>serving in the church for 10 years</b>,which helped me develop <b>dicipline, commitment</b>, and <br> a strong sense of <b>responsibility.</b></li>
-    <li>I often tell myself <b>"one more chapter"</b> but i usually end up &#128218;<b>reading 10 more</b> without noticing the time.</li>
-    <li>I enjoy &#127961 <b>replaying my favorite scenes.</b></li>
-</ul>
-
-<hr class="thick">
-
-<hr3> &#10024;Skills </hr3>
-<ul>
-    <li>Time Management &#9200</li>
-    <li>Good Listener &#128066</li>
-    <li>Problem Solving &#128269</li>
-</ul>
-
-<hr class="thick">
-<h3><b>Click Below to Connect with Me!</b></h3>
-<a href="http://www.instagram.com/_sopaiyaa/" target="_blank">
-    <img src="images/ig.jpg" alt="Instagram" width="100">
-</a>
-
-<a href="http://www.facebook.com/_sphplt" target="_blank">
-    <img src="images/faceb.jpg" alt="Facebook" width="100">
-</a>
+</div>
 
 
+    <div class="box">
+    <h3>💡 What I Believe In</h3>
+    <ul class="beliefs-list">
+        <li>Kindness matters 🤝</li>
+        <li>Consistency leads to success ⏰</li>
+        <li>Growth comes from learning 🌱</li>
+        <li>Honesty is the best policy 💎</li>
+        <li>Helping others is fulfilling ❤️</li>
+        <li>Positivity attracts positivity 🌸</li>
+    </ul>
+</div>
 
+    <div class="box">
+        <h3>🎓 Education</h3>
+        <p>College: Pampanga State Agricultural University (Information Technology)</p>
+        <p>Senior High: AGYHS (HUMSS)</p>
+        <p>Junior High: AGYHS</p>
+        <p>Elementary: Almendras Elementary School</p>
+    </div>
+
+    <div class="box">
+        <h3>💻 Languages Used</h3>
+        <img src="images/ht.jpg" width="150">
+        <img src="images/jv.jpg" width="150">
+        <img src="images/python.jpg" width="150">
+    </div>
+
+    <div class="box full">
+        <h3>📁 My Projects</h3>
+        <a href="MIDTERMS/MLT1/resume.html">MIDTERM LAB 1</a> 
+        <a href="MIDTERMS/MLT2/list.html">MIDTERM LAB 2</a>
+        <a href="MIDTERMS/MLT3/forms.html">MIDTERM LAB 3</a>
+        <a href="MIDTERMS/MLT4/image.html">MIDTERM LAB 4</a>
+        <a href="MIDTERMS/MLT5/applying CSS.html">MIDTERM LAB 5</a>
+        <a href="MIDTERMS/MLT6/LabTask6.html">MIDTERM LAB 6</a>
+        <a href="MIDTERMS/MLT7/semantic.html">MIDTERM LAB 7</a>
+        <a href="MIDTERMS/MLT8/Stylesheet.html">MIDTERM LAB 8</a>
+    </div>
+
+    <div class="box">
+    <h3>🌸 I Love</h3>
+    <ul class="love-list">
+        <li>Reading 📚</li>
+        <li>K-dramas 🎬</li>
+        <li>Alone time ☁️</li>
+        <li>Coffee ☕</li>
+        <li>Drawing ✏️</li>
+        <li>Traveling 🌍</li>
+        <li>Music 🎵</li>
+    </ul>
+</div>
+
+<div class="box">
+    <h3>✨ Fun Facts</h3>
+    <ul class="fun-facts-list">
+        <li>Love avocado 🥑</li>
+        <li>Never tried siopao 😅</li>
+        <li>Cant live without coffee ☕</li>
+        <li>Loves cute stationery ✏️</li>
+        <li>Obsessed with K-dramas 🎬</li>
+        <li>Likes collecting plushies 🧸</li>
+        <li>Enjoys night walks 🌙</li>
+        <li>Dreams of traveling 🌍</li>
+    </ul>
+</div>
+
+
+    <div class="box">
+    <h3>💗 Skills</h3>
+    <ul class="skills-list">
+        <li>Time Management ⏰</li>
+        <li>Good Listener 👂</li>
+        <li>Problem Solving 🔍</li>
+        <li>Teamwork 🤝</li>
+        <li>Creativity 🎨</li>
+        <li>Adaptability 🌱</li>
+        <li>Communication 🗣️</li>
+        <li>Critical Thinking 🧠</li>
+        <li>Organization 📋</li>
+        <li>Empathy ❤️</li>
+    </ul>
+</div>
+
+
+    <div class="box">
+    <h3>🔗 Connect with Me</h3>
+    <div class="social-links">
+        <a href="https://www.instagram.com/_sopaiyaa/" target="_blank">
+            <img src="images/in.jpg" alt="Instagram" width="170">
+        </a>
+        <a href="https://www.facebook.com/_sphplt" target="_blank">
+            <img src="images/pesbok.jpg" alt="Facebook" width="180">
+        </a>
+        <a href="https://www.tiktok.com/@seya" target="_blank">
+            <img src="images/tiktok.jpg" alt="TikTok" width="160">
+        </a>
+        <a href="https://www.wattpad.com/sopyazz" target="_blank">
+            <img src="images/watt.jpg" alt="Wattpad" width="150">
+        </a>
+    </div>
+</div>
+
+</div>
 
 </body>
 </html>
